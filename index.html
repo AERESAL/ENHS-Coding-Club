@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coming Soon — ENHS Coding Club</title>
+  <meta name="description" content="ENHS Coding Club — This site is for educational purposes only." />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f1724; --bg2:#071033; --accent:#7dd3fc; --muted:#94a3b8; --glass:rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--accent);}
+    body{background:radial-gradient(1200px 600px at 10% 10%, rgba(125,211,252,0.06), transparent), linear-gradient(180deg,var(--bg1), var(--bg2));display:flex;align-items:center;justify-content:center;padding:2rem}
+    .wrap{width:100%;max-width:960px;padding:2rem;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 12px 50px rgba(2,6,23,0.6);backdrop-filter: blur(6px);position:relative;overflow:hidden}
+    .logo{position:absolute;top:18px;left:18px;color:var(--muted);font-weight:600;font-size:0.95rem;display:flex;gap:.5rem;align-items:center}
+    .logo .dot{width:10px;height:10px;background:linear-gradient(90deg,#60a5fa,#7dd3fc);border-radius:50%}
+    .hero{display:flex;gap:2rem;align-items:center}
+    .card{flex:1;padding:3rem 2.5rem;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.008));border:1px solid rgba(125,211,252,0.06)}
+    h1{margin:0;font-size:2.4rem;line-height:1.02;color:#e6eef8;font-weight:800;letter-spacing:-0.5px}
+    p.lead{color:#bcd3ee;margin:0.7rem 0 1.5rem;font-size:1.05rem}
+    .cta{display:flex;gap:1rem;align-items:center}
+    .btn{padding:0.7rem 1.15rem;border-radius:10px;background:linear-gradient(90deg,#60a5fa22,#7dd3fc22);color:var(--accent);border:1px solid rgba(125,211,252,0.12);font-weight:600;text-decoration:none}
+    .muted{color:var(--muted);font-size:.95rem}
+    .illustration{width:320px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .blob{width:260px;height:260px;border-radius:40% 60% 55% 45%/55% 45% 55% 45%;background:linear-gradient(135deg,#7dd3fc33,#60a5fa33);box-shadow:inset 0 -20px 60px rgba(0,0,0,0.15);position:relative;display:grid;place-items:center;animation:float 6s ease-in-out infinite}
+    .blob svg{width:66%;height:66%}
+    @keyframes float{0%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}100%{transform:translateY(0) rotate(-2deg)}}
+    footer{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;color:var(--muted);font-size:.9rem}
+    @media (max-width:800px){.hero{flex-direction:column-reverse}.illustration{width:100%;display:flex;justify-content:center}.card{width:100%}}
+    a.link{color:var(--accent);text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main" aria-labelledby="coming-soon">
+    <div class="logo" aria-hidden="true"><span class="dot"></span>ENHS Coding Club</div>
+
+    <div class="hero">
+      <div class="card">
+        <h1 id="coming-soon">Something is happening soon</h1>
+        <p class="lead">We're building a friendly space for students to learn, tinker, and build — content will be published shortly.</p>
+        <div class="cta">
+          <a class="btn" href="/">Notify me</a>
+          <div class="muted">This site is for educational purposes only.</div>
+        </div>
+
+        <footer>
+          <span>ENHS Coding Club</span>
+          <span class="muted">&copy; "ENHS" • Educational use</span>
+        </footer>
+      </div>
+
+      <div class="illustration" aria-hidden="true">
+        <div class="blob" role="img" aria-label="Animated decorative blob">
+          <!-- simple laptop SVG -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="6" y="12" width="52" height="36" rx="3" fill="#0b1220" stroke="rgba(125,211,252,0.12)"/>
+            <rect x="12" y="18" width="40" height="22" rx="1.5" fill="#071226" />
+            <path d="M8 52h48v2a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2z" fill="#061122"/>
+            <rect x="22" y="24" width="20" height="10" rx="1" fill="#7dd3fc" opacity="0.15"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

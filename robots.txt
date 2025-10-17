@@ -1,0 +1,7 @@
+# robots.txt
+# This site is for educational purposes only.
+
+User-agent: *
+Disallow:
+# Note: robots.txt is a voluntary convention for crawlers and cannot legally enforce use restrictions.
+# If you want to prevent indexing, add <meta name="robots" content="noindex"> to pages or use X-Robots-Tag headers.
